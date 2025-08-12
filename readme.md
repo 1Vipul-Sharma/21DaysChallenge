@@ -31,6 +31,6 @@ The goal is to **sharpen problem-solving skills** for technical interviews while
 - **Afternoon/Evening:**  
   💻 Work on the e-commerce app (feature-by-feature)
 - **Night:**  
-  ✍️ Write a short note of what I learned that day in the `daily-log/` folder
+  ✍️ Write a short note of what I learned that day
 
 ---
