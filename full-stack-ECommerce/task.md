@@ -7,4 +7,8 @@
 
     - for that we are using mongoose package will help us in interacting with database easily
 
-DB me data write karne se pehle we have to create a model for the data that is going to be stored
+# Create a model for user
+
+    - Read about mongoose and model usage
+
+# Signup Route controller
