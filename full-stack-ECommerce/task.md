@@ -10,5 +10,10 @@
 # Create a model for user
 
     - Read about mongoose and model usage
+    - Model me pre password encryption functionality add kari h
+    - password compare karne ke lie add kia h
 
 # Signup Route controller
+
+    - simply if user exist then no signup
+    - other add new user to the database

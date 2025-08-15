@@ -23,3 +23,6 @@ public:
 
 
 kind of splitting as soon as we see an operator
+
+TC- O(n*2^n);
+SC - O(2^n);
