@@ -17,3 +17,9 @@
 
     - simply if user exist then no signup
     - other add new user to the database
+
+# add redis functionality in Signup controller
+
+    - generate access n refresh token
+    - store refresh token in redis
+    - set res.cookies for the refresh n access tokens
