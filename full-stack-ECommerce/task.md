@@ -18,8 +18,22 @@
     - simply if user exist then no signup
     - other add new user to the database
 
-# add redis functionality in Signup controller
+    # add redis functionality in Signup controller
 
-    - generate access n refresh token
-    - store refresh token in redis
-    - set res.cookies for the refresh n access tokens
+        - generate access n refresh token
+        - store refresh token in redis
+        - set res.cookies for the refresh n access tokens
+
+# login Route controller - simple check if email and password is valid
+
+    -if yes just generate , set n send the tokens
+
+# logout route
+
+    - remove tokens from redis
+    - remove tokens from cookies
+
+# regenerate access token
+
+    -check req me jo refreshtoken h n jo redis me save h same h
+    - if yes generate access token set in redis n cokkies again
