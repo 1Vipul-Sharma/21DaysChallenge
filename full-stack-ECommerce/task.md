@@ -7,6 +7,8 @@
 
     - for that we are using mongoose package will help us in interacting with database easily
 
+<!-- USER RELATED -->
+
 # Create a model for user
 
     - Read about mongoose and model usage
@@ -37,3 +39,14 @@
 
     -check req me jo refreshtoken h n jo redis me save h same h
     - if yes generate access token set in redis n cokkies again
+
+<!-- PRODUCT RELATED -->
+
+# getAllproducts route
+
+    - added middleware for protectedroute(get user)
+    - user should be admin
+
+# getFeaturedProduct route
+
+    -get from redis if not from mongo but store it in redis then it is frequent transaction so just save it in redis

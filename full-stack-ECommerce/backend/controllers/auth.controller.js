@@ -96,7 +96,7 @@ export const login = async (req, res) => {
 
     // 3. Compare password
 
-    console.log("vipul", user);
+    // console.log("vipul", user);
 
     const isValidPassword = await user.comparePassword(password);
     if (!isValidPassword) {
