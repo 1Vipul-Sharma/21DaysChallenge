@@ -50,3 +50,7 @@
 # getFeaturedProduct route
 
     -get from redis if not from mongo but store it in redis then it is frequent transaction so just save it in redis
+
+# addProduct
+
+<!-- by 21 i have to complete backend part -->
