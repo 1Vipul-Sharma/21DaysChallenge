@@ -1,0 +1,22 @@
+# Ignore env files
+.env
+
+# Ignore logs everywhere
+logs/
+*.log
+
+# Ignore node_modules everywhere
+node_modules/
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore build/dist folders everywhere
+dist/
+build/
+
+# Ignore secrets everywhere
+secret.txt
+*.key
+*.pem

@@ -53,4 +53,15 @@
 
 # addProduct
 
+    - add product to the mongoDb and upload image to the cloudinary n store the url in mongoDB
+
+# deleteProduct
+
+    - delete product from the mongo and cloudinary as well
+
+# recommendedProduct
+
+    - generate random x number of products to shown
+
+<!-- no need to mention it again n again -->
 <!-- by 21 i have to complete backend part -->
