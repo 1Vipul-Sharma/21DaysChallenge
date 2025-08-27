@@ -41,3 +41,7 @@ video - https://www.youtube.com/watch?v=CnH3kAXSrmU
 
     https://mongoosejs.com/docs/
     mongodb +mongoose tutorial
+
+<!-- Day 4 -->
+
+    https://dev.to/srishtikprasad/error-handling-with-express-40pk

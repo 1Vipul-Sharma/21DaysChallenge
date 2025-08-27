@@ -1,0 +1,7 @@
+Set bit → n | (1 << k)
+
+Unset bit → n & ~(1 << k)
+
+Toggle bit → n ^ (1 << k)
+
+Check bit → (n >> k) & 1

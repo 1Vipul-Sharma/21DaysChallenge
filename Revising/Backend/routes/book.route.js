@@ -3,28 +3,29 @@ import Book from "../models/book.model.js";
 const router = express.Router();
 
 // GET all books
-router.get("/", async (req, res) => {
-  const books = await Book.find({});
-  res.status(200).json(books);
+router.get("/", async (req, res, next) => {
+  try {
+    const books = await Book.find({});
+    res.status(200).json(books);
+  } catch (error) {
+    next(error);
+  }
 });
 
 // POST a new book
-router.post("/", async (req, res) => {
+router.post("/", async (req, res, next) => {
   try {
     const { name, category, quantity } = req.body;
-
     // Option 1: using Book.create()
     const newBook = await Book.create({ name, category, quantity });
 
     res.status(201).json(newBook);
   } catch (err) {
-    res
-      .status(400)
-      .json({ message: "Failed to create book", error: err.message });
+    next(err);
   }
 });
 
-router.delete("/:mongoId", async (req, res) => {
+router.delete("/:mongoId", async (req, res, next) => {
   try {
     const { mongoId } = req.params;
 
@@ -37,13 +38,11 @@ router.delete("/:mongoId", async (req, res) => {
 
     res.status(200).json({ message: "Book deleted successfully", deletedBook });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: "Error deleting book", error: err.message });
+    next(err);
   }
 });
 
-router.patch("/:mongoId", async (req, res) => {
+router.patch("/:mongoId", async (req, res, next) => {
   try {
     const { mongoId } = req.params;
     const updates = req.body; // fields to update
@@ -61,11 +60,7 @@ router.patch("/:mongoId", async (req, res) => {
 
     res.status(200).json(updatedBook);
   } catch (err) {
-    console.log(err.message);
-
-    res
-      .status(400)
-      .json({ message: "Failed to update book", error: err.message });
+    next(err);
   }
 });
 
