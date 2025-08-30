@@ -46,7 +46,7 @@
 
     no of subarray with sum <=k - no of subarray with sum <= k-1
 
-# shortest len window with (any condition)
+# shortest len window with (any condition(sum>=k))
 
     int shortestWindow(vector<int>& arr, int K) {
         int n = arr.size();
