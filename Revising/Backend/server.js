@@ -1,6 +1,7 @@
 import express from "express";
 import { connectDB } from "./lib/db.js";
 import BookRoutes from "./routes/book.route.js";
+import authRoutes from "./routes/auth.route.js";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -10,6 +11,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/api/book", BookRoutes);
+app.use("/api/auth", authRoutes);
 
 // Global Error Handling Middleware
 app.use((err, req, res, next) => {

@@ -45,3 +45,9 @@ video - https://www.youtube.com/watch?v=CnH3kAXSrmU
 <!-- Day 4 -->
 
     https://dev.to/srishtikprasad/error-handling-with-express-40pk
+
+<!-- Day 5 -->
+
+https://medium.com/@codemaniac-sahil/authentication-in-nodejs-and-mongodb-using-jwt-and-cookies-d617bd98cdea
+
+bcrypt module

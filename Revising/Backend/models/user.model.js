@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-import bcrypt from "bcrypt";
-
+import brcypt from "bcrypt";
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
@@ -16,15 +15,14 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-userSchema.pre("save", async function (next) {
-  // use function() instead of arrow function
+userSchema.pre("save", async (next) => {
   if (!this.isModified("password")) return next();
-
   try {
-    const salt = await bcrypt.genSalt(10);
-    this.password = await bcrypt.hash(this.password, salt);
+    const salt = await brcypt.genSalt(10);
+    this.password = await brcypt.hash(this.password, salt);
     next();
   } catch (error) {
+    // console.log();
     next(error);
   }
 });
